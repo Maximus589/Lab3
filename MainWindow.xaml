@@ -1,0 +1,20 @@
+<Window x:Class="EconomicStatistics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EconomicStatistics"
+        xmlns:views="clr-namespace:EconomicStatistics.Views"
+        mc:Ignorable="d"
+        Title="Экономическая статистика России" Height="650" Width="900">
+    <Grid>
+        <TabControl>
+            <TabItem Header="ВВП/ВНП">
+                <views:GdpGnpView/>
+            </TabItem>
+            <TabItem Header="Население">
+                <views:PopulationView/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
